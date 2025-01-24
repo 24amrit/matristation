@@ -1,0 +1,329 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 40px;
+}
+
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link {
+    color: #002366;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar-nav .nav-link img{
+    height: 35px;
+    width: 35px;
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.4rem;
+    color: #002366;
+    display: block;
+}
+
+.navbar-nav .nav-link img.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.search-container {
+    width: 35rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    padding: 0.5rem;
+}
+
+.search-container button {
+    border-radius: 0 5px 5px 0;
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.auth-buttons {
+    text-align: end;
+    padding: 10px;
+}
+
+.auth-buttons p {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.auth-buttons .btn-sm {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .desktop-menu {
+        display: none; /* Hide desktop menu on smaller screens */
+    }
+
+    .mobile-menu {
+        display: block; /* Show mobile menu */
+    }
+}
+
+@media (min-width: 993px) {
+    .mobile-menu {
+        display: none; /* Hide mobile menu on larger screens */
+    }
+}
+
+/* Mobile Menu Styling */
+.mobile-menu .navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu .mobile-nav {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.mobile-menu .mobile-nav.show {
+    display: block;
+}
+
+.mobile-menu .mobile-nav .nav-link {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.mobile-menu .auth-buttons-mobile {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mobile-menu .auth-buttons-mobile .btn-sm {
+    margin: 5px;
+}
+
+
+
+/* mega menu */
+/* Mega Menu Styles */
+.mega-menu {
+    position: absolute;
+    top: 80px;
+    /* Adjust to match navbar height */
+    right: 35px;
+    width: 600px;
+    /* Combined width for left and right sections */
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    display: none;
+    /* Hidden by default */
+    overflow: hidden;
+    /* Ensures clean scrollable content */
+    height: 35rem;
+}
+
+.mega-menu.active {
+    display: flex;
+    /* Show as flex to divide left and right sections */
+    flex-direction: column;
+}
+
+.mega-menu-section {
+    flex: 1;
+    overflow-y: auto;
+    /* Independent scrolling for each section */
+    max-height: 500px;
+    /* Set maximum height for scrolling */
+    border-right: 1px solid #ddd;
+}
+
+.mega-menu-section:last-child {
+    border-right: none;
+    /* No border on the last section */
+}
+
+.mega-menu-header {
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    /* Keep header sticky while scrolling */
+    z-index: 10;
+}
+
+/* Browse History Styles (Left Side) */
+.mega-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.mega-menu-item:last-child {
+    border-bottom: none;
+}
+
+.mega-menu-item .remove-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #ff6b6b;
+    cursor: pointer;
+}
+
+.browse-history {
+    /* max-height: 200px; */
+    overflow-y: auto;
+}
+
+/* Settings List (Right Side) */
+.settings-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+.settings-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.settings-item:hover {
+    background-color: #e5e5e5;
+}
+
+.settings-item:last-child {
+    border-bottom: none;
+}
+
+/* search bar modal */
+  /* Search Bar */
+  .search-container {
+    position: relative; /* To position the pop-up relative to this container */
+    /* width: 50%; */
+    /* margin: 50px auto; */
+  }
+  
+  #searchBar {
+    /* width: 100%; */
+    /* padding: 10px; */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Pop-up Container */
+  .popup {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position right below the search bar */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .popup-section {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .popup-section h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .popup-section ul {
+    list-style: none;
+  }
+  
+  .popup-section ul li {
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .popup-section ul li:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Remove bottom border for last section */
+  .popup-section:last-child {
+    border-bottom: none;
+  }
+  
+/* Clear Icon */
+.clear-icon {
+    position: absolute;
+    right: 60px;
+    /* top: 50%;
+    transform: translateY(-50%); */
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 30px;
+    padding: 0px 8px;
+    background: #737373;
+  }
+  
+  .clear-icon:hover {
+    color: #333;
+    background-color: #b7b7b7;
+  }
+ 

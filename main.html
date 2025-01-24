@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+                <!-- Auth Buttons -->
+                <div class="auth-buttons">
+                    <p>New to Matri Station</p>
+                    <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+                    <a href="signup.html" class="btn btn-danger btn-sm">Register Free</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                        style="color: #0D3F6C;">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <!-- Auth Buttons for Mobile -->
+            <div class="auth-buttons-mobile">
+                <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+                <a href="signup.html" class="btn btn-danger btn-sm">Register Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header-section text-white d-flex justify-content-between align-items-center px-4 py-2">
+        <div class="logo d-flex align-items-center">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="header-title text-center">
+            <h5 class="mb-0">Latest Technology</h5>
+        </div>
+        <div class="settings d-flex align-items-center">
+            <p class="mb-0 me-2">Easy application installation</p>
+            <i class="fas fa-cog"></i>
+        </div>
+    </div>
+
+    <!-- home Banner -->
+    <section class="home-banner">
+        <!-- Search Section -->
+        <div class="search-section">
+            <form class="row g-2 align-items-center">
+                <div class="col-12 col-md-2">
+                    <select class="form-select">
+                        <option selected>Looking for a</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                </div>
+                <div class="col-6 col-md-2">
+                    <input type="number" class="form-control" placeholder="Aged From">
+                </div>
+                <div class="col-6 col-md-2">
+                    <input type="number" class="form-control" placeholder="Aged To">
+                </div>
+                <div class="col-12 col-md-2">
+                    <select class="form-select">
+                        <option selected>Religion</option>
+                        <option value="1">Hindu</option>
+                        <option value="2">Christian</option>
+                        <option value="3">Muslim</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-2">
+                    <select class="form-select">
+                        <option selected>Mother Tongue</option>
+                        <option value="1">Odia</option>
+                        <option value="2">Hindi</option>
+                        <option value="3">Telugu</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Side Icons -->
+    <!-- <div class="side-icons">
+        <div class="side-icon"><i class="fas fa-phone"></i></div>
+        <div class="side-icon"><i class="fas fa-envelope"></i></div>
+        <div class="side-icon"><i class="fas fa-map-marker-alt"></i></div>
+    </div> -->
+
+    <!-- download Section -->
+    <div class="download-section">
+        <div class="main-overlay"></div>
+        <div class="app-info">
+            <h2>Download matristation.com App</h2>
+            <p>Available on Android & iOS store</p>
+            <a href="#" class="btn">
+                <img src="img/google.png" alt="Play Store">
+            </a>
+        </div>
+        <div class="app-preview">
+            <img src="img/google-side.png" alt="App Preview"> <!-- Replace with actual app preview image -->
+        </div>
+    </div>
+
+    <!-- features -->
+    <section class="features-section">
+        <!-- Section Title -->
+        <h2>With over five years of experience</h2>
+        <p class="subtitle">Fostering collaboration and connection among people.</p>
+
+        <!-- Features -->
+        <div class="container">
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-md-4 feature-bo">
+                    <img src="img/ep1.png" alt="Profiles Icon">
+                    <h4>PROFILES FULLY SCREENED AND READY TO EXCEL</h4>
+                    <img src="img/ep4.png" class="fea" alt="Profiles Icon">
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4 feature-bo">
+                    <img src="img/ep2.png" alt="Verified Icon">
+                    <h4>VERIFIED WITH A PERSONAL TOUCH</h4>
+                    <img src="img/ep5.png" class="fea" alt="Profiles Icon">
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-4 feature-bo">
+                    <img src="img/ep3.png" alt="Privacy Icon">
+                    <h4>COMPLETE CONTROL OVER THEIR PRIVACY</h4>
+                    <img src="img/ep6.png" class="fea" alt="Profiles Icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- simple way -->
+    <section class="simple p-3 mt-5">
+        <h2>Three simplest way to find one for you</h2>
+        <img src="img/simple way.png" alt="">
+    </section>
+
+    <!-- why choose -->
+    <section class="why-choose-section">
+        <!-- Section Title -->
+        <h2>Why Choose Matri Station</h2>
+        <p class="subtitle">
+            <span>MatriSTATION</span> is different from other matchmaking sites because of some unique benefits that
+            every parents will find highly successful.
+        </p>
+
+        <!-- Features -->
+        <div class="container">
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-md-4 feature-box">
+                    <img src="img/why_icon1.png" alt="Family Icon">
+                    <h5>Get Complete Family Information</h5>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4 feature-box">
+                    <img src="img/why_icon1.png" alt="Community Icon">
+                    <h5>Get Matches from your Community</h5>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-4 feature-box">
+                    <img src="img/why_icon1.png" alt="Barrier Free Icon">
+                    <h5>Enable your search without any barrier</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Register Now -->
+        <div class="register-now">
+            <p>Register and find your loved one</p>
+            <button type="button">Register Now</button>
+        </div>
+    </section>
+
+    <!-- soul mate -->
+    <section class="soul-section">
+        <!-- Section Title -->
+        <h2>Find your soulmate, your special someone.</h2>
+
+        <!-- Features -->
+        <div class="container">
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-md-4 feature-box2">
+                    <img src="img/soul1.png" style="background-color: #21346A;" alt="Family Icon">
+                    <h3>Sign Up</h3>
+                    <h6>Join for free and create your matrimony profile</h6>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4 feature-box2">
+                    <img src="img/soul2.png" style="background-color: #21346A;" alt="Community Icon">
+                    <h3>Connect</h3>
+                    <h5>Browse and Bond with Preffered Matches</h5>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-4 feature-box2">
+                    <img src="img/soul3.png" style="background-color: #21346A;" alt="Barrier Free Icon">
+                    <h3>Interact</h3>
+                    <h5>Upgrade to premium and initiate a chat</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="info-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 style="color: #21346A;">Your Chance To Find The One</h3>
+                    <p class="text-muted">MatrStation's offers a unique opportunity to connect with your ideal partner.
+                        With personalized matchmaking services, MatriStation ensures a seamless and fulfilling journey
+                        towards finding true love and building lasting relationships. Join now and take the first step
+                        towards your happily ever after. Discover the difference with MatriStation today.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 style="color: #21346A;">Why MatriStation??</h3>
+                    <p class="text-muted">Choose MatriStation for its personalized matchmaking, extensive profiles, and
+                        commitment to helping you find your perfect match. Our dedicated team and advanced algorithms
+                        ensure a seamless, secure, and enjoyable experience, guiding you towards meaningful connections
+                        and lasting relationships. Discover the difference with MatriStation today.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 style="color: #21346A;">Find Your Perfect Match</h3>
+                    <p class="text-muted">"Find Your Perfect Match" with MatriStation's tailored matchmaking services.
+                        Our advanced algorithms and personalized approach ensure you connect with compatible partners,
+                        fostering genuine relationships. Join us to embark on a journey towards true love and lasting
+                        happiness. MatriStation makes finding your ideal match easier and more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section text-center text-white py-5">
+        <div class="container d-flex justify-content-center gap-3 align-item-center">
+            <h2>Unleash Your Story: Start Now!</h2>
+            <a href="#" class="btn btn-light btn-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="testimonials py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">What Our Clients Say About Us</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Aditi & Sameer</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>"MatrStation has truly changed my life. After trying various ways to meet someone
+                                        special, I finally decided to give MatriStation a try."</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Neha & Rahul</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>"The detailed profiles and the easy-to-use interface made it so convenient to
+                                        find someone who shared my values and interests."</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Priya & Arjun</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>"I never thought I would find my life partner online, but MatriStation proved me
+                                        wrong."</p>
+                                </div>
+                            </div>
+                            <!-- Single Card for Tablets and Mobile -->
+                            <div class="col-12 d-lg-none">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Aditi & Sameer</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>"MatrStation has truly changed my life. After trying various ways to meet someone
+                                        special, I finally decided to give MatriStation a try. "</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Aditi & Sameer</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>"MatrStation has truly changed my life. After trying various ways to meet someone
+                                        special, I finally decided to give MatriStation a try."</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Neha & Rahul</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>" The detailed profiles and the easy-to-use interface made it so convenient to
+                                        find someone who shared my values and interests."</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Priya & Arjun</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>"I never thought I would find my life partner online, but MatriStation proved me
+                                        wrong."</p>
+                                </div>
+                            </div>
+                            <!-- Single Card for Tablets and Mobile -->
+                            <div class="col-12 d-lg-none">
+                                <div class="testimonial-card p-4">
+                                    <img src="https://via.placeholder.com/50" alt="Client Image"
+                                        class="rounded-circle mb-3">
+                                    <h5>Aditi & Sameer</h5>
+                                    <p class="text-warning">★★★★★</p>
+                                    <p>"MatrStation has truly changed my life. After trying various ways to meet someone
+                                        special, I finally decided to give MatriStation a try."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides here if needed -->
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- happy -->
+    <section class="couple-slider-section container">
+        <h2>Lakhs of Happy Couple Match by MATRI STATION</h2>
+
+        <div id="coupleCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Carousel Item 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy1.png" alt="Couple 1">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy2.png" alt="Couple 2">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy3.png" alt="Couple 3">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy4.png" alt="Couple 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Item 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy1.png" alt="Couple 5">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy2.png" alt="Couple 6">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy3.png" alt="Couple 7">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 px-2">
+                            <div class="couple-card">
+                                <img src="img/happy4.png" alt="Couple 8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#coupleCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coupleCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Matri STATION Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold">Matri STATION</h5>
+                    <p>
+                        MatriStation is an exclusive platform for marriage proposals, offering crucial match-making
+                        solutions across India. The name "MatriStation" embodies the essence of matrimony, bringing
+                        together individuals from diverse backgrounds to form meaningful connections and lifelong
+                        partnerships within the community.
+                    </p>
+                </div>
+                <!-- Explore Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Advance Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matches</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Testimonial</a></li>
+                    </ul>
+                </div>
+                <!-- Other Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">Other Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Match Making Process</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Matri STATION</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matri STATION Alerts</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Match Guarantee</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold">Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li>+91 2323 232323</li>
+                        <li>+91 0365 555568</li>
+                    </ul>
+                    <h5 class="fw-bold mt-3">Follow us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 2px solid white;"></div>
+        <div class="d-flex justify-content-center mt-2">
+            <h7>All Rights Reserved By @ Design and developed by Matristation.com</h7>
+        </div>
+    </footer>
+
+
+    <script>
+        const settingsText = document.querySelector('.settings p');
+        const textArray = ['Latest Technology',
+            'Easy Application Instalation',
+            'Multiple Free Choice',
+            'Quick and Easy Registration',
+            'Widest Range',
+            'Access to advanced message feature ',
+            'Preview message for free',
+            'Enjoy Browsing Profile Immediately',
+            'Trusted site backed by Matri Station'];
+        let currentIndex = 0;
+
+        function rotateText() {
+            settingsText.style.transform = 'translateY(-100%)'; // Move the text out of view
+
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % textArray.length;
+                settingsText.textContent = textArray[currentIndex];
+                settingsText.style.transform = 'translateY(0)'; // Bring the new text into view
+            }, 500); // Adjust the delay as needed
+        }
+
+        setInterval(rotateText, 3000); // Adjust the interval to control the rotation speed
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

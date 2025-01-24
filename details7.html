@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* sign up */
+        .signup-container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            /* Make the container height responsive */
+            background: url('img/bg-home.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            /* Add padding to prevent content from touching edges */
+            box-sizing: border-box;
+            /* Ensure padding doesn't affect width/height */
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .signup-form-container {
+            position: relative;
+            /* Adjust for z-index alignment */
+            display: flex;
+            flex-direction: column;
+            /* Ensure column layout */
+            background: #fff;
+            padding: 2rem;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+            bottom: 100px;
+        }
+
+        /* Styling for dropdown with tabs */
+        .dropdown-content {
+            position: absolute;
+            top: 15rem;
+            /* Adjust as needed */
+            left: 0;
+            width: 100%;
+            /* Or any width you prefer */
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 1000;
+            /* Make sure it is above other elements */
+        }
+
+        .dropdown-content2 {
+            position: absolute;
+            top: 21rem;
+            /* Adjust as needed */
+            left: 0;
+            width: 100%;
+            /* Or any width you prefer */
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 1000;
+            /* Make sure it is above other elements */
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow-x: auto;
+            /* Hide scrollbar */
+            scrollbar-width: none;
+            /* For Firefox */
+            -ms-overflow-style: none;
+            /* For Internet Explorer and Edge */
+
+            /* Hide scrollbar for WebKit browsers */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .tab {
+            flex: 0 0 auto;
+            white-space: nowrap;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border-bottom: 1px solid transparent;
+        }
+
+        .tab.active {
+            border-bottom: 1px solid red;
+        }
+
+        .tab-content {
+            padding: 10px;
+        }
+
+        h6 {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a href="#" class="d-flex align-items-center">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0">Matri <span class="text-primary">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <div class="signup-container p-3">
+        <!-- Background Image -->
+        <div class="background-overlay"></div>
+
+        <!-- Form Section -->
+        <div class="signup-form-container">
+            <button class="close-button">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="form-header text-center">
+                <img src="img/matristation-logo.png" alt="Logo" class="mb-3">
+                <h6>Few more steps more! Please add Property & Other Details</h6>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="hobbies" class="form-label">Hobbies & Interest</label>
+                    <input type="text" class="form-control" id="hobbies" placeholder="Enter your hobbies and interests"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="language" class="form-label">Choose Language</label>
+                    <select class="form-control" id="language" required>
+                        <option value="">Select your language</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Mandarin">Mandarin</option>
+                        <!-- Add more language options as needed -->
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary w-100">Next</button>
+
+                <!-- Dropdown for Immovable -->
+                <div class="dropdown-content" id="hobbies">
+                    <ul class="tabs">
+                        <li class="tab active" data-tab="hobb">Hobbies & Habits</li>
+                        <li class="tab" data-tab="music">Music</li>
+                        <li class="tab" data-tab="reading">Reading</li>
+                        <li class="tab" data-tab="movies">Movies & TV Shows</li>
+                        <li class="tab" data-tab="sports">Sports & Fitness</li>
+                        <li class="tab" data-tab="food">Food</li>
+                    </ul>
+                    <div class="tab-content" id="hobb">
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Acting
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Adventure sports
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Alternative healing / Medicine
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-next">Next</button>
+                        </form>
+                    </div>
+                    <div class="tab-content" id="music" style="display: none;">
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Classical
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Disco
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Folk
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-next">Next</button>
+                        </form>
+                    </div>
+                    <div class="tab-content" id="reading" style="display: none;">
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Fantasy
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    History
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Fiction
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-next">Next</button>
+                        </form>
+                    </div>
+                    <div class="tab-content" id="movies" style="display: none;">
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Action
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Anime
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Comedy
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary  btn-next">Next</button>
+                        </form>
+                    </div>
+                    <div class="tab-content" id="sports" style="display: none;">
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Cricket
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Football
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Basketball
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary  btn-next">Next</button>
+                        </form>
+                    </div>
+                    <div class="tab-content" id="food" style="display: none;">
+                        <form>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Mushroom
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Paneer
+                                </label>
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-check-input" type="radio" name="landCount" id="landCount1" value="1">
+                                <label class="form-check-label" for="landCount1">
+                                    Baby corn
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Show dropdown on input click
+        document.getElementById('hobbies').addEventListener('click', function () {
+            const dropdown = document.querySelector('.dropdown-content');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                // Switch to the selected tab
+                switchTab(index);
+            });
+        });
+
+        const nextButtons = document.querySelectorAll('.btn-next');
+
+        nextButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const currentTabIndex = Array.from(tabs).findIndex(tab => tab.classList.contains('active'));
+                const nextTabIndex = (currentTabIndex + 1) % tabs.length; // Circular navigation
+                switchTab(nextTabIndex);
+            });
+        });
+
+        function switchTab(index) {
+            // Remove active class from all tabs and hide all tab contents
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabContents.forEach(content => (content.style.display = 'none'));
+
+            // Add active class to the selected tab and show its content
+            tabs[index].classList.add('active');
+            tabContents[index].style.display = 'block';
+            // Scroll to the active tab
+            tabs[index].scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (event) {
+            const dropdown = document.querySelector('.dropdown-content');
+            const isClickInside = document.getElementById('hobbies').contains(event.target) ||
+                dropdown.contains(event.target);
+
+            if (!isClickInside) {
+                dropdown.style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

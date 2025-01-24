@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+
+                <!-- Navbar Menu -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/home-icon.png" alt="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/message-icon.png" alt="">
+                            Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">
+                            Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">
+                            Renew
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/membership-icon.png" alt="">
+                            Membership
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Right Section -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">
+                            Success Story
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"  onclick="toggleMegaMenu()"><img src="img/setting-icon.png" alt="">
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mega Menu -->
+    <div class="mega-menu" id="mega-menu">
+        <div class="d-flex" style="height: 500px;">
+            <!-- Left Section: Browse History -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Browse History</div>
+                <div class="browse-history">
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS001)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS002)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS003)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Settings List -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Settings</div>
+                <div class="settings-list">
+                    <a href="#" class="settings-item">
+                        <img src="img/profile-icon.png" alt=""> My Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/blocked-user.png" alt=""> Blocked User
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/notification.png" alt=""> Notification
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/wallet.png" alt=""> Wallet
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refer-earn.png" alt=""> Refer and Earn
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refund-policy.png" alt=""> Refund Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/matches.png" alt=""> Matches
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/mail-box.png" alt=""> Mail Box
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/chat.png" alt=""> Chat
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-profile.png" alt=""> Edit Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-center.png" alt=""> 24x7 Help Center
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-partner.png" alt=""> Edit Partner Preference
+                    </a>
+                    <a href="privacy-setting.html" class="settings-item">
+                        <img src="img/privacy-setting.png" alt=""> Privacy Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/communication-setting.png" alt=""> Communication Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Account Setting 
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/sms-history.png" alt=""> SMS History
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/upgrade-now.png" alt=""> Upgrade Now
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/privacy-policy.png" alt=""> Privacy Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/feedback.png" alt=""> Feedback
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-support.png" alt=""> Help & Support
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/about-us.png" alt=""> About Us
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/share-app.png" alt=""> Share App
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/term-condition.png" alt=""> Term & Condition
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/alert-update.png" alt=""> Alerts & Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            <a href=""  style="border: 1px solid grey; padding: 5px; border-radius: 10px; color: #015884;
+        text-decoration: none;">Log Out</a>
+        </div>
+    </div>
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                        style="color: #0D3F6C;">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/home-icon.png" alt="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/message-icon.png" alt="">Message</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">Renew</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/membership-icon.png"
+                            alt="">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">Success
+                        Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">Contact Us</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">Profile</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/setting-icon.png" alt="">Setting</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- orange line -->
+    <section class="navbar-container">
+        <div class="orange-bar" id="orange-bar">
+            <button class="btn next-button" id="next-btn"><img src="img/two-way.png" style="height: 20px;
+                background: transparent;" alt=""></button>
+            <button class="btn prev-button d-none" id="prev-btn"><img src="img/two-way.png"
+                    style="height: 20px; background: transparent;" alt=""></button>
+            <div class="menu-items" id="menu-items">
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- filter option -->
+    <section class="filter px-4">
+        <!-- Filter Container -->
+        <div id="filterContainer" class="filter-container">
+            <div class="d-flex">
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Personalize Search
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Refine
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Category
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Filter By
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Short By
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Location
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Affluent
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Match
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Near by
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Religious & Community
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Family
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Age
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Profile crated for
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Physical Attributes
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Blood Group
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Reservation
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Marital Status
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Mother Tongue
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next/Previous Button -->
+        <button id="nextBtnFilter" class="next-btnf ms-2">&gt;</button>
+    </section>
+
+    <section class="container mt-4 mb-5">
+        <div class="alerts-section">
+            <div class="p-2">
+                <h4 class="section-title">Alerts & Updates</h4>
+                <p class="section-description">
+                    Stay updated with the latest from MatriStation.com by managing your email subscriptions! <br>
+                    Customize your alerts and newsletters to receive only the information that matters most to you.
+                </p>
+            </div>
+            <div class="accordion" id="alertsAccordion">
+                <!-- Match Mail -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            Match Mail & Photo Match Mail
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Receive tailored match suggestions directly in your email:</p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="d-flex">
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="daily">
+                                        <label class="form-check-label" for="daily">Daily</label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="tri-weekly">
+                                        <label class="form-check-label" for="tri-weekly">Tri-Weekly</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="weekly">
+                                        <label class="form-check-label" for="weekly">Weekly</label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                        <label class="form-check-label" for="unsubscribe">Unsubscribe</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3"><i class="bi bi-check-circle"></i>If there are no new preferred matches,
+                                please send broader match suggestions.</p>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Premium Match Mail -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Premium Match Mail
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Get notified when your matches upgrade to Premium Membership</p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="d-flex">
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="daily">
+                                        <label class="form-check-label" for="daily">Weekly</label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="tri-weekly">
+                                        <label class="form-check-label" for="tri-weekly">Unsubscribe</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recent Visitor Email -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Recent Visitor Email
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Receive instant notifications when members check out your
+                                profile!</p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="d-flex">
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="weekly">
+                                        <label class="form-check-label" for="weekly">Daily</label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                        <label class="form-check-label" for="unsubscribe">Unsubscribe</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Members who Shortlisted you Email -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Members who Shortlisted you Email
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Get notified when members add your profile to their shortlist!
+                            </p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="d-flex">
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="weekly">
+                                        <label class="form-check-label" for="weekly">Weekly</label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                        <label class="form-check-label" for="unsubscribe">Unsubscribe</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Viewed Profile Email -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            Viewed Profile Email
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Here’s a gentle reminder of profiles you recently viewed but
+                                haven’t reached out to connect with yet. Don’t miss the chance to make a new connection!
+                            </p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="d-flex">
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="weekly">
+                                        <label class="form-check-label" for="weekly">Weekly</label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                        <label class="form-check-label" for="unsubscribe">Unsubscribe</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Similar Profiles Email -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            Similar Profiles Email
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Check out profiles similar to those you've recently liked! An
+                                email update with new, compatible options to help you find more great connections.</p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="d-flex">
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="weekly">
+                                        <label class="form-check-label" for="weekly">Bi-Weekly</label>
+                                    </div>
+                                    <div class="form-check col-1">
+                                        <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                        <label class="form-check-label" for="unsubscribe">Unsubscribe</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Alert -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                            aria-controls="collapseSeven">
+                            Contact Alert
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Get updates whenever someone reaches out to you or responds to a
+                                message you’ve sent. Choose your preferred frequency and never miss an opportunity to
+                                stay connected!
+                            </p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="weekly">
+                                    <label class="form-check-label" for="weekly">Instant - A mail for every
+                                        response</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                    <label class="form-check-label" for="unsubscribe">Daily - A digest of all responses
+                                        received in a day</label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                    <label class="form-check-label" for="unsubscribe">Unsubscribe</label>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Message Received Alert -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                            aria-controls="collapseEight">
+                            Message Received Alert
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">Stay updated with an email notification whenever new messages
+                                arrive.</p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="weekly">
+                                    <label class="form-check-label" for="weekly">Daily - A digest of all messages
+                                        received in a day</label>
+                                </div>
+                                <div class="form-check col-1">
+                                    <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                    <label class="form-check-label" for="unsubscribe">Unsubscribe</label>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SMS Alert -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                        <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                            aria-controls="collapseNine">
+                            SMS Alert
+                            <span class="icon float-end">+</span>
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                        data-bs-parent="#alertsAccordion">
+                        <div class="accordion-body">
+                            <p style="color: #21798D;">All SMS notifications will be delivered to your registered mobile
+                                number: +91-1234567890. </p>
+                            <div class="d-flex flex-column">
+                                <p>Email Alert</p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="weekly">
+                                    <label class="form-check-label" for="weekly">For every Invitation received (max 2 per/day)</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="unsubscribe">
+                                    <label class="form-check-label" for="unsubscribe">For every Accept to my Invitation (max 2 per/day)</label>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-secondary me-2">Cancel</button>
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Matri STATION Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold">Matri STATION</h5>
+                    <p>
+                        MatriStation is an exclusive platform for marriage proposals, offering crucial match-making
+                        solutions across India. The name "MatriStation" embodies the essence of matrimony, bringing
+                        together individuals from diverse backgrounds to form meaningful connections and lifelong
+                        partnerships within the community.
+                    </p>
+                </div>
+                <!-- Explore Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Advance Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matches</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Testimonial</a></li>
+                    </ul>
+                </div>
+                <!-- Other Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">Other Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Match Making Process</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Matri STATION</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matri STATION Alerts</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Match Guarantee</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold">Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li>+91 2323 232323</li>
+                        <li>+91 0365 555568</li>
+                    </ul>
+                    <h5 class="fw-bold mt-3">Follow us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 2px solid white;"></div>
+        <div class="d-flex justify-content-center mt-2">
+            <h7>All Rights Reserved By @ Design and developed by Matristation.com</h7>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Toggle Plus/Minus Icon
+        document.querySelectorAll('.custom-accordion-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Reset all icons to "+"
+                document.querySelectorAll('.custom-accordion-btn').forEach(btn => {
+                    const otherIcon = btn.querySelector('.icon');
+                    otherIcon.textContent = "+";
+                });
+
+                // Now toggle the clicked button's icon
+                const icon = this.querySelector('.icon');
+                if (this.classList.contains('collapsed')) {
+                    icon.textContent = "+"; // This might seem redundant but is needed in some cases.
+                } else {
+                    icon.textContent = "-";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

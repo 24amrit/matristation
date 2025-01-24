@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .section-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .section-description {
+            color: #666;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+
+                <!-- Navbar Menu -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/home-icon.png" alt="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/message-icon.png" alt="">
+                            Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">
+                            Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">
+                            Renew
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/membership-icon.png" alt="">
+                            Membership
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Right Section -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">
+                            Success Story
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"><img src="img/contact-icon.png" alt="">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleMegaMenu()"><img src="img/setting-icon.png" alt="">
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mega Menu -->
+    <div class="mega-menu" id="mega-menu">
+        <div class="d-flex" style="height: 500px;">
+            <!-- Left Section: Browse History -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Browse History</div>
+                <div class="browse-history">
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS001)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS002)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS003)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Settings List -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Settings</div>
+                <div class="settings-list">
+                    <a href="#" class="settings-item">
+                        <img src="img/profile-icon.png" alt=""> My Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/blocked-user.png" alt=""> Blocked User
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/notification.png" alt=""> Notification
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/wallet.png" alt=""> Wallet
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refer-earn.png" alt=""> Refer and Earn
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refund-policy.png" alt=""> Refund Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/matches.png" alt=""> Matches
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/mail-box.png" alt=""> Mail Box
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/chat.png" alt=""> Chat
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-profile.png" alt=""> Edit Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-center.png" alt=""> 24x7 Help Center
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-partner.png" alt=""> Edit Partner Preference
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/privacy-setting.png" alt=""> Privacy Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/communication-setting.png" alt=""> Communication Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Account Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/sms-history.png" alt=""> SMS History
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/upgrade-now.png" alt=""> Upgrade Now
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/privacy-policy.png" alt=""> Privacy Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/feedback.png" alt=""> Feedback
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-support.png" alt=""> Help & Support
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/about-us.png" alt=""> About Us
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/share-app.png" alt=""> Share App
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/term-condition.png" alt=""> Term & Condition
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/alert-update.png" alt=""> Alerts & Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            <a href="" style="border: 1px solid grey; padding: 5px; border-radius: 10px; color: #015884;
+        text-decoration: none;">Log Out</a>
+        </div>
+    </div>
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                        style="color: #0D3F6C;">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/home-icon.png" alt="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/message-icon.png" alt="">Message</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">Renew</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/membership-icon.png"
+                            alt="">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">Success
+                        Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">Contact Us</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">Profile</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/setting-icon.png" alt="">Setting</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- privacy-setting -->
+    <section class="container mt-4 mb-5">
+        <div class="alerts-section">
+            <div class="p-2">
+                <h4 class="section-title">Success Story</h4>
+                <p class="section-description">
+                    Check it out our Success stories who found their life partner here.
+                </p>
+            </div>
+            <div class="p-2 bg-white">
+                <!-- Tabs -->
+                <ul class="nav nav-tabs mb-4" id="successStoryTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="success-stories-tab" data-bs-toggle="tab"
+                            data-bs-target="#success-stories" type="button" role="tab" aria-controls="success-stories"
+                            aria-selected="true">Success Stories</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="post-success-story-tab" data-bs-toggle="tab"
+                            data-bs-target="#post-success-story" type="button" role="tab"
+                            aria-controls="post-success-story" aria-selected="false">Post your success story</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="successStoryTabContent">
+                    <!-- Success Stories Tab -->
+                    <div class="tab-pane fade show active" id="success-stories" role="tabpanel"
+                        aria-labelledby="success-stories-tab">
+                        <h5 class="text-start">Success Story</h5>
+                        <p class="text-start">Some of our happily married couples' story</p>
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 shadow">
+                                    <img src="img/happy1.png" class="card-img-top" alt="Subham & Neha">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Subham & Neha</h5>
+                                        <p class="card-text">
+                                            At the outset, we exchanged requests, but Neha initially declined mine, as her bucket list was already filled with numerous connections. Little did she know, that inadvertent click set the stage for our gradual and intriguing journey of communication.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Card 2 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 shadow">
+                                    <img src="img/happy2.png" class="card-img-top" alt="Biswa & Nikita">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Biswa & Nikita</h5>
+                                        <p class="card-text">
+                                            At the outset, we exchanged requests, but Nikita initially declined mine, as her bucket list was already filled with numerous connections. Little did she know, that inadvertent click set the stage for our gradual and intriguing journey of communication.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Card 3 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100 shadow">
+                                    <img src="img/happy3.png" class="card-img-top" alt="Tanmay & Mohini">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tanmay & Mohini</h5>
+                                        <p class="card-text">
+                                            At the outset, we exchanged requests, but Mohini initially declined mine, as her bucket list was already filled with numerous connections. Little did she know, that inadvertent click set the stage for our gradual and intriguing journey of communication.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Post Your Success Story Tab -->
+                    <div class="tab-pane fade" id="post-success-story" role="tabpanel" aria-labelledby="post-success-story-tab">
+                        <div class="container d-flex justify-content-center align-items-center flex-column">
+                            <h5 class="text-center mb-4">Post Success Story</h5>
+                            <p class="text-muted text-center mb-4">Post your success story here</p>
+                    
+                            <form class="w-50">
+                                <!-- Bride ID -->
+                                <div class="mb-3">
+                                    <label for="brideId" class="form-label">Bride ID <span class="text-danger">*</span></label>
+                                    <input type="text" id="brideId" class="form-control" placeholder="Enter Bride ID">
+                                </div>
+                    
+                                <!-- Bride Name -->
+                                <div class="mb-3">
+                                    <label for="brideName" class="form-label">Bride Name <span class="text-danger">*</span></label>
+                                    <input type="text" id="brideName" class="form-control" placeholder="Enter Bride Name">
+                                </div>
+                    
+                                <!-- Groom ID -->
+                                <div class="mb-3">
+                                    <label for="groomId" class="form-label">Groom ID <span class="text-danger">*</span></label>
+                                    <input type="text" id="groomId" class="form-control" placeholder="Enter Groom ID">
+                                </div>
+                    
+                                <!-- Groom Name -->
+                                <div class="mb-3">
+                                    <label for="groomName" class="form-label">Groom Name <span class="text-danger">*</span></label>
+                                    <input type="text" id="groomName" class="form-control" placeholder="Enter Groom Name">
+                                </div>
+                    
+                                <!-- Engagement Date -->
+                                <div class="mb-3">
+                                    <label for="engagementDate" class="form-label">Engagement Date <span class="text-danger">*</span></label>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <select class="form-select" id="engagementDay">
+                                                <option>01</option>
+                                                <!-- Add other days -->
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="form-select" id="engagementMonth">
+                                                <option>Jan</option>
+                                                <!-- Add other months -->
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="form-select" id="engagementYear">
+                                                <option>2050</option>
+                                                <!-- Add other years -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Marriage Date -->
+                                <div class="mb-3">
+                                    <label for="marriageDate" class="form-label">Marriage Date <span class="text-danger">*</span></label>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <select class="form-select" id="marriageDay">
+                                                <option>01</option>
+                                                <!-- Add other days -->
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="form-select" id="marriageMonth">
+                                                <option>Jan</option>
+                                                <!-- Add other months -->
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="form-select" id="marriageYear">
+                                                <option>2050</option>
+                                                <!-- Add other years -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Upload Photo -->
+                                <div class="mb-3">
+                                    <label for="uploadPhoto" class="form-label">Upload Photo <span class="text-danger">*</span></label>
+                                    <input type="file" id="uploadPhoto" class="form-control">
+                                </div>
+                    
+                                <!-- Success Story -->
+                                <div class="mb-3">
+                                    <label for="successStory" class="form-label">Success Story <span class="text-danger">*</span></label>
+                                    <textarea id="successStory" class="form-control" rows="4" placeholder="Enter Your Success Story Here"></textarea>
+                                </div>
+                    
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            </form>
+                    
+                            <!-- Success Story Topics -->
+                            <div class="mt-4 text-start">
+                                <h6>Which topics you can write as your success story</h6>
+                                <ul class="list-unstyled">
+                                    <li>How you created your ID and how you became our user.</li>
+                                    <li>How you contacted your partner.</li>
+                                    <li>How you think that your perfect and process further.</li>
+                                    <li>What you think about our website and experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Matri STATION Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold">Matri STATION</h5>
+                    <p>
+                        MatriStation is an exclusive platform for marriage proposals, offering crucial match-making
+                        solutions across India. The name "MatriStation" embodies the essence of matrimony, bringing
+                        together individuals from diverse backgrounds to form meaningful connections and lifelong
+                        partnerships within the community.
+                    </p>
+                </div>
+                <!-- Explore Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Advance Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matches</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Testimonial</a></li>
+                    </ul>
+                </div>
+                <!-- Other Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">Other Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Match Making Process</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Matri STATION</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matri STATION Alerts</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Match Guarantee</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold">Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li>+91 2323 232323</li>
+                        <li>+91 0365 555568</li>
+                    </ul>
+                    <h5 class="fw-bold mt-3">Follow us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 2px solid white;"></div>
+        <div class="d-flex justify-content-center mt-2">
+            <h7>All Rights Reserved By @ Design and developed by Matristation.com</h7>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

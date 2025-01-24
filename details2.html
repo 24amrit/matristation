@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a href="#" class="d-flex align-items-center">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0">Matri <span class="text-primary">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="signup-container p-3">
+        <!-- Background Image -->
+        <div class="background-overlay"></div>
+
+        <!-- Form Section -->
+        <div class="signup-form-container">
+            <button class="close-button">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="form-header text-center">
+                <img src="img/matristation-logo.png" alt="Logo" class="mb-3">
+                <h6>Just few more steps more! Please add Education & Career Details</h6>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="education" class="form-label">Highest Education</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="education" placeholder="Enter your course" data-bs-toggle="dropdown" aria-expanded="false" required>
+                        <ul class="dropdown-menu w-100 p-2" aria-labelledby="education" style="overflow-y: scroll;">
+                            <input class="form-control mb-2" type="text" placeholder="Search">
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('education').value = 'Bachelors'">Bachelor's</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('education').value = 'Masters'">Master's</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('education').value = 'Ph.D.'">Ph.D.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="institution" class="form-label">Institution</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="institution" placeholder="Enter your branch" data-bs-toggle="dropdown" aria-expanded="false" required>
+                        <ul class="dropdown-menu w-100 p-2" aria-labelledby="institution" style="overflow-y: scroll;">
+                            <input class="form-control mb-2" type="text" placeholder="Search">
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('institution').value = 'MIT'">MIT</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('institution').value = 'Harvard'">Harvard</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('institution').value = 'Stanford'">Stanford</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="additional-degree" class="form-label">Additional Degree</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="additional-degree" placeholder="Enter your degree" data-bs-toggle="dropdown" aria-expanded="false" required>
+                        <ul class="dropdown-menu w-100 p-2" aria-labelledby="additional-degree" style="overflow-y: scroll;">
+                            <input class="form-control mb-2" type="text" placeholder="Search">
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('additional-degree').value = 'MBA'">MBA</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('additional-degree').value = 'MCA'">MCA</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('additional-degree').value = 'M.Tech'">M.Tech</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="employed-in" class="form-label">Employed in</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="employed-in" placeholder="Enter your employment type" data-bs-toggle="dropdown" aria-expanded="false" required>
+                        <ul class="dropdown-menu w-100 p-2" aria-labelledby="employed-in" style="overflow-y: scroll;">
+                            <input class="form-control mb-2" type="text" placeholder="Search">
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('employed-in').value = 'Private'">Private</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('employed-in').value = 'Government'">Government</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('employed-in').value = 'Self-Employed'">Self-Employed</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="occupation" class="form-label">Occupation</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="occupation" placeholder="Enter your occupation" data-bs-toggle="dropdown" aria-expanded="false" required>
+                        <ul class="dropdown-menu w-100 p-2" aria-labelledby="occupation" style="overflow-y: scroll;">
+                            <input class="form-control mb-2" type="text" placeholder="Search">
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('occupation').value = 'Engineer'">Engineer</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('occupation').value = 'Doctor'">Doctor</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('occupation').value = 'Teacher'">Teacher</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="designation" class="form-label">Designation</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="designation" placeholder="Enter your designation" data-bs-toggle="dropdown" aria-expanded="false" required>
+                        <ul class="dropdown-menu w-100 p-2" aria-labelledby="designation" style="overflow-y: scroll;">
+                            <input class="form-control mb-2" type="text" placeholder="Search">
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('designation').value = 'Manager'">Manager</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('designation').value = 'Team Lead'">Team Lead</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('designation').value = 'CEO'">CEO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <label for="annual-income" class="form-label">Annual Income</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="annual-income" placeholder="Enter your annual income" data-bs-toggle="dropdown" aria-expanded="false" required>
+                        <ul class="dropdown-menu w-100 p-2" aria-labelledby="designation" style="overflow-y: scroll;">
+                            <input class="form-control mb-2" type="text" placeholder="Search">
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('annual-income').value = '0-5 LPA'">0-5 LPA</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('annual-income').value = '0-5 LPA'">0-5 LPA</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('annual-income').value = '10+ LPA'">10+ LPA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <button type="button" class="btn btn-primary w-100">Next</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

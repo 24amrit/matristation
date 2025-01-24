@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a href="#" class="d-flex align-items-center">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0">Matri <span class="text-primary">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="signup-container p-3">
+        <!-- Background Image -->
+        <div class="background-overlay"></div>
+
+        <!-- Form Section -->
+        <div class="signup-form-container">
+            <button class="close-button">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="form-header text-center">
+                <img src="img/matristation-logo.png" alt="Logo" class="mb-3">
+                <h6>Two More steps more! Please add Personal Information</h6>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="dob" class="form-label">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" required>
+                </div>
+                <div class="mb-3">
+                    <label for="birthPlace" class="form-label">Birth Place</label>
+                    <input type="text" class="form-control" id="birthPlace" placeholder="Enter your city" required>
+                </div>
+                <div class="mb-3">
+                    <label for="birthTime" class="form-label">Birth Time</label>
+                    <input type="time" class="form-control" id="birthTime" required>
+                </div>
+                <div class="mb-3">
+                    <label for="rassi" class="form-label">Rassi / Moon Sign</label>
+                    <input type="text" class="form-control" id="rassi" placeholder="Enter your moon sign" required>
+                </div>
+                <div class="mb-3">
+                    <label for="star" class="form-label">Star</label>
+                    <input type="text" class="form-control" id="star" placeholder="Enter your star" required>
+                </div>
+                <div class="mb-3">
+                    <label for="height" class="form-label">Height</label>
+                    <input type="text" class="form-control" id="height" placeholder="Enter your height" required>
+                </div>
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Weight</label>
+                    <input type="text" class="form-control" id="weight" placeholder="Enter your weight" required>
+                </div>
+                <div class="mb-3">
+                    <label for="chest" class="form-label">Chest (Optional)</label>
+                    <input type="text" class="form-control" id="chest" placeholder="Enter chest measurement">
+                </div>
+                <div class="mb-3">
+                    <label for="waist" class="form-label">Waist (Optional)</label>
+                    <input type="text" class="form-control" id="waist" placeholder="Enter waist measurement">
+                </div>
+                <div class="mb-3">
+                    <label for="bloodGroup" class="form-label">Blood Group</label>
+                    <select class="form-control" id="bloodGroup" required>
+                        <option value="">Select your blood group</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="eatingType" class="form-label">Eating Type</label>
+                    <select class="form-control" id="eatingType" required>
+                        <option value="">Select eating preference</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Non-Vegetarian">Non-Vegetarian</option>
+                        <option value="Eggetarian">Eggetarian</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="maritalStatus" class="form-label">Marital Status</label>
+                    <select class="form-control" id="maritalStatus" required>
+                        <option value="">Select marital status</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="drinkingHabits" class="form-label">Drinking Habits</label>
+                    <select class="form-control" id="drinkingHabits" required>
+                        <option value="">Select drinking habits</option>
+                        <option value="Never">Never</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Frequently">Frequently</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="smokingHabits" class="form-label">Smoking Habits</label>
+                    <select class="form-control" id="smokingHabits" required>
+                        <option value="">Select smoking habits</option>
+                        <option value="Never">Never</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Frequently">Frequently</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="physicalStatus" class="form-label">Physical Status</label>
+                    <select class="form-control" id="physicalStatus" required>
+                        <option value="">Select physical status</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Differently-abled">Differently-abled</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="religion" class="form-label">Religion</label>
+                    <input type="text" class="form-control" id="religion" placeholder="Enter your religion" required>
+                </div>
+                <div class="mb-3">
+                    <label for="caste" class="form-label">Caste</label>
+                    <input type="text" class="form-control" id="caste" placeholder="Enter your caste" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subCaste" class="form-label">Sub Caste</label>
+                    <input type="text" class="form-control" id="subCaste" placeholder="Enter your sub caste">
+                </div>
+                <div class="mb-3">
+                    <label for="motherTongue" class="form-label">Mother Tongue</label>
+                    <input type="text" class="form-control" id="motherTongue" placeholder="Enter your mother tongue" required>
+                </div>
+                <div class="mb-3">
+                    <label for="complexion" class="form-label">Complexion (Skin Tone)</label>
+                    <input type="text" class="form-control" id="complexion" placeholder="Enter your skin tone" required>
+                </div>
+                <button type="button" class="btn btn-primary w-100">Next</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

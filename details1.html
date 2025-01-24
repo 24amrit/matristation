@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a href="#" class="d-flex align-items-center">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0">Matri <span class="text-primary">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <div class="signup-container">
+        <!-- Background Image -->
+        <div class="background-overlay"></div>
+
+        <!-- Form Section -->
+        <div class="signup-form-container">
+            <button class="close-button">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="form-header text-center">
+                <img src="img/matristation-logo.png" alt="Logo" class="mb-3">
+                <h6>Thank you for registering! Now, let’s get started on building (User Name)’s Profile</h6>
+            </div>
+            <form>
+                <!-- Country -->
+                <div class="mb-3 position-relative">
+                    <label for="country" class="form-label">Country</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="country" data-bs-toggle="dropdown"
+                            aria-expanded="false" placeholder="Enter your country" autocomplete="off">
+                        <ul class="dropdown-menu w-100" aria-labelledby="country" style="overflow-y: scroll;">
+                            <li class="px-3">
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('country').value = 'India'">India</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('country').value = 'United States'">United
+                                    States</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('country').value = 'Australia'">Australia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- State -->
+                <div class="mb-3 position-relative">
+                    <label for="state" class="form-label">State</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="state" data-bs-toggle="dropdown"
+                            aria-expanded="false" placeholder="Enter your state" autocomplete="off">
+                        <ul class="dropdown-menu w-100" aria-labelledby="state" style="overflow-y: scroll;">
+                            <li class="px-3">
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('state').value = 'Maharashtra'">Maharashtra</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('state').value = 'California'">California</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('state').value = 'New South Wales'">New South
+                                    Wales</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- City -->
+                <div class="mb-3 position-relative">
+                    <label for="city" class="form-label">City</label>
+                    <div class="dropdown">
+                        <input type="text" class="form-control dropdown-toggle" id="city" data-bs-toggle="dropdown"
+                            aria-expanded="false" placeholder="Enter your city" autocomplete="off">
+                        <ul class="dropdown-menu w-100" aria-labelledby="city" style="overflow-y: scroll;">
+                            <li class="px-3">
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('city').value = 'Mumbai'">Mumbai</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('city').value = 'Los Angeles'">Los Angeles</a></li>
+                            <li><a class="dropdown-item" href="#"
+                                    onclick="document.getElementById('city').value = 'Sydney'">Sydney</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Current Address -->
+                <div class="mb-3">
+                    <label for="address" class="form-label">Current Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter your current address"
+                        required>
+                </div>
+
+                <button type="button" class="btn btn-primary w-100">Next</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+
+                <!-- Navbar Menu -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/home-icon.png" alt="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/message-icon.png" alt="">
+                            Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">
+                            Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">
+                            Renew
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/membership-icon.png" alt="">
+                            Membership
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Right Section -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">
+                            Success Story
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleMegaMenu()"><img src="img/setting-icon.png" alt="">
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mega Menu -->
+    <div class="mega-menu" id="mega-menu">
+        <div class="d-flex" style="height: 500px;">
+            <!-- Left Section: Browse History -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Browse History</div>
+                <div class="browse-history">
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS001)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS002)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS003)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Settings List -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Settings</div>
+                <div class="settings-list">
+                    <a href="#" class="settings-item">
+                        <img src="img/profile-icon.png" alt=""> My Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/blocked-user.png" alt=""> Blocked User
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/notification.png" alt=""> Notification
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/wallet.png" alt=""> Wallet
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refer-earn.png" alt=""> Refer and Earn
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refund-policy.png" alt=""> Refund Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/matches.png" alt=""> Matches
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/mail-box.png" alt=""> Mail Box
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/chat.png" alt=""> Chat
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-profile.png" alt=""> Edit Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-center.png" alt=""> 24x7 Help Center
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-partner.png" alt=""> Edit Partner Preference
+                    </a>
+                    <a href="privacy-setting.html" class="settings-item">
+                        <img src="img/privacy-setting.png" alt=""> Privacy Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/communication-setting.png" alt=""> Communication Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Account Setting
+                    </a>
+                    <a href="sms-history.html" class="settings-item">
+                        <img src="img/sms-history.png" alt=""> SMS History
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/upgrade-now.png" alt=""> Upgrade Now
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/privacy-policy.png" alt=""> Privacy Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/feedback.png" alt=""> Feedback
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-support.png" alt=""> Help & Support
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/about-us.png" alt=""> About Us
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/share-app.png" alt=""> Share App
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/term-condition.png" alt=""> Term & Condition
+                    </a>
+                    <a href="alert-update.html" class="settings-item">
+                        <img src="img/alert-update.png" alt=""> Alerts & Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            <a href="" style="border: 1px solid grey; padding: 5px; border-radius: 10px; color: #015884;
+        text-decoration: none;">Log Out</a>
+        </div>
+    </div>
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                        style="color: #0D3F6C;">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/home-icon.png" alt="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/message-icon.png" alt="">Message</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">Renew</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/membership-icon.png"
+                            alt="">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">Success
+                        Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">Contact Us</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">Profile</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/setting-icon.png" alt="">Setting</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Sidebar -->
+    <section class="content-wrapper d-flex">
+        <div class="sidebar bg-light p-3 collapse show" id="sidebarMenu">
+            <ul class="list-unstyled">
+                <li>
+                    <a data-bs-toggle="collapse" href="#collapsePending" role="button" aria-expanded="false"
+                        aria-controls="collapsePending">
+                        Pending
+                        <span class="toggle-icon">+</span>
+                    </a>
+                    <div class="collapse" id="collapsePending">
+                        <div class="collapse-content">
+                            <div class="radio-group">
+                              <input type="radio" id="location1" name="location" value="location1">
+                              <label for="location1">All</label><br>
+                              <input type="radio" id="location2" name="location" value="location2">
+                              <label for="location2">Interests</label><br>
+                              <input type="radio" id="location3" name="location" value="location3"> 
+                              <label for="location3">Message</label><br>
+                              <input type="radio" id="location4" name="location" value="location4">
+                              <label for="location4">Filter</label><br>
+                              <input type="radio" id="location5" name="location" value="location5">
+                              <label for="location5">Sort</label><br>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <a data-bs-toggle="collapse" href="#collapseAccepted" role="button" aria-expanded="false"
+                        aria-controls="collapseAccepted">
+                        Accepted
+                        <span class="toggle-icon">+</span>
+                    </a>
+                    <div class="collapse" id="collapseAccepted">
+                        <div class="collapse-content">
+                            <div class="radio-group">
+                              <input type="radio" id="location1" name="location" value="location1">
+                              <label for="location1">Sort</label><br>
+                              <input type="radio" id="location2" name="location" value="location2">
+                              <label for="location2">Interests</label><br>
+                              <input type="radio" id="location3" name="location" value="location3">
+                              <label for="location3">Filter</label><br>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <a data-bs-toggle="collapse" href="#collapseDeclined" role="button" aria-expanded="false"
+                        aria-controls="collapseDeclined">
+                        Declined
+                        <span class="toggle-icon">+</span>
+                    </a>
+                    <div class="collapse" id="collapseDeclined">
+                        <div class="collapse-content">
+                            <div class="radio-group">
+                              <input type="radio" id="location1" name="location" value="location1">
+                              <label for="location1">All</label><br>
+                              <input type="radio" id="location2" name="location" value="location2">
+                              <label for="location2">Interests</label><br>
+                              <input type="radio" id="location3" name="location" value="location3">
+                              <label for="location3">Message</label><br>
+                              <input type="radio" id="location4" name="location" value="location4">
+                              <label for="location4">Filter</label><br>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <a data-bs-toggle="collapse" href="#collapseReplied" role="button" aria-expanded="false"
+                        aria-controls="collapseReplied">
+                        Replied
+                        <span class="toggle-icon">+</span>
+                    </a>
+                    <div class="collapse" id="collapseReplied">
+                        <div class="collapse-content">
+                            <div class="radio-group">
+                              <input type="radio" id="location1" name="location" value="location1">
+                              <label for="location1">Message</label><br>
+                              <input type="radio" id="location2" name="location" value="location2">
+                              <label for="location2">Sort</label><br>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <a data-bs-toggle="collapse" href="#collapseRequests" role="button" aria-expanded="false"
+                        aria-controls="collapseRequests">
+                        Requests
+                        <span class="toggle-icon">+</span>
+                    </a>
+                    <div class="collapse" id="collapseRequests">
+                        <div class="collapse-content">
+                            <div class="radio-group">
+                              <input type="radio" id="location1" name="location" value="location1">
+                              <label for="location1">Photo</label><br>
+                              <input type="radio" id="location2" name="location" value="location2">
+                              <label for="location2">Horoscope</label><br>
+                              <input type="radio" id="location3" name="location" value="location3">
+                              <label for="location3">Profile Info</label><br>
+                              <input type="radio" id="location4" name="location" value="location4">
+                              <label for="location4">Photo Grant</label><br>
+                              <input type="radio" id="location5" name="location" value="location5">
+                              <label for="location5">Phone Grant</label><br>
+                              <input type="radio" id="location6" name="location" value="location6">
+                              <label for="location6">Horoscope Grant</label><br>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <a data-bs-toggle="collapse" href="#collapseFiltered" role="button" aria-expanded="false"
+                        aria-controls="collapseFiltered">
+                        Filtered
+                        <span class="toggle-icon">+</span>
+                    </a>
+                    <div class="collapse" id="collapseFiltered">
+                        <div class="collapse-content">
+                            <div class="radio-group">
+                              <input type="radio" id="location1" name="location" value="location1">
+                              <label for="location1">Photo</label><br>
+                              <input type="radio" id="location2" name="location" value="location2">
+                              <label for="location2">Horoscope</label><br>
+                              <input type="radio" id="location3" name="location" value="location3">
+                              <label for="location3">Profile Info</label><br>
+                              <input type="radio" id="location4" name="location" value="location4">
+                              <label for="location4">Photo Grant</label><br>
+                              <input type="radio" id="location5" name="location" value="location5">
+                              <label for="location5">Phone Grant</label><br>
+                              <input type="radio" id="location6" name="location" value="location6">
+                              <label for="location6">Horoscope Grant</label><br>
+                            </div>
+                          </div>
+                    </div>
+                </li>
+                <li>
+                    <a data-bs-toggle="collapse" href="#collapseChat" role="button" aria-expanded="false"
+                        aria-controls="collapseChat">
+                        Chat History
+                        <span class="toggle-icon">+</span>
+                    </a>
+                    <div class="collapse" id="collapseChat">
+                        <div class="collapse-content">
+                            <input type="radio" id="location1" name="location" value="location1">
+                            <label for="location1">Option 1</label><br>
+                            <input type="radio" id="location2" name="location" value="location2">
+                            <label for="location2">Option 2</label>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container mt-4">
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-tabs" id="requestTabs" role="tablist" style="border: none;">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="received-tab" data-bs-toggle="tab" data-bs-target="#received"
+                        type="button" role="tab" aria-controls="received" aria-selected="true"
+                        style="color: black; border: none; border-bottom: none;">Received</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sent-tab" data-bs-toggle="tab" data-bs-target="#sent" type="button"
+                        role="tab" aria-controls="sent" aria-selected="false"
+                        style="color: black; border: none; border-bottom: none;">Sent</button>
+                </li>
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="tab-content mt-3" id="requestTabsContent">
+                <!-- Received Tab Pane -->
+                <div class="tab-pane fade show active" id="received" role="tabpanel" aria-labelledby="received-tab">
+                    <!-- Header Section -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <strong>Received</strong>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" id="selectAll" class="form-check-input me-2">
+                            <label for="selectAll">Select all</label>
+                            <button class="btn btn-sm ms-3 text-white" style="background-color: #005884;"
+                                id="deleteAll">Delete</button>
+                        </div>
+                    </div>
+                    <!-- Request Cards -->
+                    <div id="received-list">
+                        <!-- User Request Card -->
+                        <div class="request-card d-flex align-items-start mb-3 p-3 border rounded">
+                            <img src="img/request_img1.png" alt="User" class="rounded user-img me-3">
+                            <div class="flex-grow-1">
+                                <p class="mb-1 text-muted">MS12436</p>
+                                <h6 class="mb-1"><strong>Madhusmita Jena</strong></h6>
+                                <p class="mb-1 text-muted">45 yrs, 5ft 4in, SC, Single, Khorda, Odisha, India</p>
+                                <p class="mb-1 small">You have received a request from Madhusmita Jena to grant access
+                                    to view your
+                                    phone
+                                    number on 24 Jan 2024</p>
+                                <div class="mt-3 d-flex align-items-center justify-content-end gap-3">
+                                    <button class="btn btn-outline-dan btn-sm"
+                                        style="color: #005884; border: 1px solid #1371a1;">Decline</button>
+                                    <button class="btn btn-outline-suc text-white btn-sm"
+                                        style="background-color: #005884;">Grant</button>
+                                </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input me-3">
+                        </div>
+                        <!-- User Request Card -->
+                        <div class="request-card d-flex align-items-start mb-3 p-3 border rounded">
+                            <img src="img/request_img2.png" alt="User" class="rounded user-img me-3">
+                            <div class="flex-grow-1">
+                                <p class="mb-1 text-muted">MS12436</p>
+                                <h6 class="mb-1"><strong>Madhusmita Jena</strong></h6>
+                                <p class="mb-1 text-muted">45 yrs, 5ft 4in, SC, Single, Khorda, Odisha, India</p>
+                                <p class="mb-1 small">You have received a request from Madhusmita Jena to grant access
+                                    to view your
+                                    phone
+                                    number on 24 Jan 2024</p>
+                                <div class="mt-3 d-flex align-items-center justify-content-end gap-3">
+                                    <button class="btn btn-outline-dan btn-sm"
+                                        style="color: #005884; border: 1px solid #1371a1;">Decline</button>
+                                    <button class="btn btn-outline-suc text-white btn-sm"
+                                        style="background-color: #005884;">Grant</button>
+                                </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input me-3">
+                        </div>
+                        <!-- User Request Card -->
+                        <div class="request-card d-flex align-items-start mb-3 p-3 border rounded">
+                            <img src="img/request_img3.png" alt="User" class="rounded user-img me-3">
+                            <div class="flex-grow-1">
+                                <p class="mb-1 text-muted">MS12436</p>
+                                <h6 class="mb-1"><strong>Madhusmita Jena</strong></h6>
+                                <p class="mb-1 text-muted">45 yrs, 5ft 4in, SC, Single, Khorda, Odisha, India</p>
+                                <p class="mb-1 small">You have received a request from Madhusmita Jena to grant access
+                                    to view your
+                                    phone
+                                    number on 24 Jan 2024</p>
+                                <div class="mt-3 d-flex align-items-center justify-content-end gap-3">
+                                    <button class="btn btn-outline-dan btn-sm"
+                                        style="color: #005884; border: 1px solid #1371a1;">Decline</button>
+                                    <button class="btn btn-outline-suc text-white btn-sm"
+                                        style="background-color: #005884;">Grant</button>
+                                </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input me-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sent Tab Pane -->
+                <div class="tab-pane fade" id="sent" role="tabpanel" aria-labelledby="sent-tab">
+                    <!-- Header Section -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <strong>Sent</strong>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="selectAllSent" class="form-check-input me-2">
+                            <label for="selectAllSent">Select all</label>
+                            <button class="btn btn-sm ms-3 text-white" style="background-color: #005884;"
+                                id="deleteAll">Delete</button>
+                        </div>
+                    </div>
+                    <!-- Request Cards -->
+                    <div id="sent-list">
+                        <!-- User Request Card -->
+                        <div class="request-card d-flex align-items-start mb-3 p-3 border rounded">
+                            <img src="img/request_img2.png" alt="User" class="rounded user-img me-3">
+                            <div class="flex-grow-1">
+                                <p class="mb-1 text-muted">MS12437</p>
+                                <h6 class="mb-1"><strong>Sonali Roy</strong></h6>
+                                <p class="mb-1 text-muted">45 yrs, 5ft 4in, SC, Single, Khorda, Odisha, India</p>
+                                <p class="mb-1 small">You have sent a request to Sonali Roy to grant access to view her
+                                    phone
+                                    number on 22 Jan 2024</p>
+                                <div class="mt-3 d-flex align-items-center justify-content-end gap-3">
+                                    <button class="btn btn-outline-dan text-white btn-sm"
+                                        style="background-color: #005884;">Cancel</button>
+                                </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input me-3">
+                        </div>
+                        <!-- User Request Card -->
+                        <div class="request-card d-flex align-items-start mb-3 p-3 border rounded">
+                            <img src="img/request_img3.png" alt="User" class="rounded user-img me-3">
+                            <div class="flex-grow-1">
+                                <p class="mb-1 text-muted">MS12437</p>
+                                <h6 class="mb-1"><strong>Sonali Roy</strong></h6>
+                                <p class="mb-1 text-muted">45 yrs, 5ft 4in, SC, Single, Khorda, Odisha, India</p>
+                                <p class="mb-1 small">You have sent a request to Sonali Roy to grant access to view her
+                                    phone
+                                    number on 22 Jan 2024</p>
+                                <div class="mt-3 d-flex align-items-center justify-content-end gap-3">
+                                    <button class="btn btn-outline-dan text-white btn-sm"
+                                        style="background-color: #005884;">Cancel</button>
+                                </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input me-3">
+                        </div>
+                        <!-- User Request Card -->
+                        <div class="request-card d-flex align-items-start mb-3 p-3 border rounded">
+                            <img src="img/request_img4.png" alt="User" class="rounded user-img me-3">
+                            <div class="flex-grow-1">
+                                <p class="mb-1 text-muted">MS12437</p>
+                                <h6 class="mb-1"><strong>Sonali Roy</strong></h6>
+                                <p class="mb-1 text-muted">45 yrs, 5ft 4in, SC, Single, Khorda, Odisha, India</p>
+                                <p class="mb-1 small">You have sent a request to Sonali Roy to grant access to view her
+                                    phone
+                                    number on 22 Jan 2024</p>
+                                <div class="mt-3 d-flex align-items-center justify-content-end gap-3">
+                                    <button class="btn btn-outline-dan text-white btn-sm"
+                                        style="background-color: #005884;">Cancel</button>
+                                </div>
+                            </div>
+                            <input type="checkbox" class="form-check-input me-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Matri STATION Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold">Matri STATION</h5>
+                    <p>
+                        MatriStation is an exclusive platform for marriage proposals, offering crucial match-making
+                        solutions across India. The name "MatriStation" embodies the essence of matrimony, bringing
+                        together individuals from diverse backgrounds to form meaningful connections and lifelong
+                        partnerships within the community.
+                    </p>
+                </div>
+                <!-- Explore Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Advance Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matches</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Testimonial</a></li>
+                    </ul>
+                </div>
+                <!-- Other Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">Other Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Match Making Process</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Matri STATION</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matri STATION Alerts</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Match Guarantee</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold">Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li>+91 2323 232323</li>
+                        <li>+91 0365 555568</li>
+                    </ul>
+                    <h5 class="fw-bold mt-3">Follow us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 2px solid white;"></div>
+        <div class="d-flex justify-content-center mt-2">
+            <h7>All Rights Reserved By @ Design and developed by Matristation.com</h7>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // message
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggles = document.querySelectorAll('[data-bs-toggle="collapse"]');
+
+            toggles.forEach(toggle => {
+                const icon = toggle.querySelector('.toggle-icon');
+                const collapseTarget = document.querySelector(toggle.getAttribute('href'));
+
+                // Update the icon when the collapse is shown or hidden
+                collapseTarget.addEventListener('show.bs.collapse', () => {
+                    icon.textContent = '-';
+                });
+
+                collapseTarget.addEventListener('hide.bs.collapse', () => {
+                    icon.textContent = '+';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

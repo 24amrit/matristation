@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+
+                <!-- Navbar Menu -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/home-icon.png" alt="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="message.html"><img src="img/message-icon.png" alt="">
+                            Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chat.html"><img src="img/chat-icon.png" alt="">
+                            Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">
+                            Renew
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membership.html"><img src="img/membership-icon.png" alt="">
+                            Membership
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search" id="searchBar" class="form-control">
+                    <span id="clearIcon" class="clear-icon" style="display: none;">&times;</span>
+                    <button><i class="fas fa-search"></i></button>
+
+                    <!-- Pop-up Container -->
+                    <div id="popupContainer" class="popup">
+                        <div class="popup-section">
+                            <h4 class="text-start">Recently Searched</h4>
+                            <ul class="d-flex justify-content-between mt-3">
+                                <li style="border: 1px solid black;border-radius: 20px;">Near Cuttack</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Khandayat</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">24 year girls</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Hindu</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">SC</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Divorce</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">ST</li>
+                            </ul>
+                        </div>
+
+                        <div class="popup-section">
+                            <h4 class="text-start">Visited Profiles</h4>
+                            <ul class="d-flex justify-content-between mt-3">
+                                <li style="border: 1px solid black;border-radius: 20px;">Near Cuttack</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Khandayat</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">24 year girls</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Hindu</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">SC</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Divorce</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">ST</li>
+                            </ul>
+                        </div>
+
+                        <div class="popup-section">
+                            <h4 class="text-start">Suggested Profiles</h4>
+                            <ul class="d-flex justify-content-between mt-3">
+                                <li style="border: 1px solid black;border-radius: 20px;">Near Cuttack</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Khandayat</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">24 year girls</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Hindu</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">SC</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">Divorce</li>
+                                <li style="border: 1px solid black;border-radius: 20px;">ST</li>
+                            </ul>
+                        </div>
+
+                        <div class="popup-section">
+                            <h4 class="text-start">Browsing History</h4>
+                            <ul class="d-flex gap-3 mt-3">
+                                <li class="p-2" style="border: 1px solid black;border-radius: 20px;">Item 1</li>
+                                <li class="p-2" style="border: 1px solid black;border-radius: 20px;">Item 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="success-story.html"><img src="img/successstory-icon.png" alt="">
+                            Success Story
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"><img src="img/contact-icon.png" alt="">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleMegaMenu()"><img src="img/setting-icon.png" alt="">
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!-- Mega Menu -->
+    <div class="mega-menu" id="mega-menu">
+        <div class="d-flex" style="height: 500px;">
+            <!-- Left Section: Browse History -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Browse History</div>
+                <div class="browse-history">
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS001)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS002)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS003)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Settings List -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Settings</div>
+                <div class="settings-list">
+                    <a href="#" class="settings-item">
+                        <img src="img/profile-icon.png" alt=""> My Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/blocked-user.png" alt=""> Blocked User
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/notification.png" alt=""> Notification
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/wallet.png" alt=""> Wallet
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refer-earn.png" alt=""> Refer and Earn
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refund-policy.png" alt=""> Refund Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/matches.png" alt=""> Matches
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/mail-box.png" alt=""> Mail Box
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/chat.png" alt=""> Chat
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-profile.png" alt=""> Edit Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-center.png" alt=""> 24x7 Help Center
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-partner.png" alt=""> Edit Partner Preference
+                    </a>
+                    <a href="privacy-setting.html" class="settings-item">
+                        <img src="img/privacy-setting.png" alt=""> Privacy Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/communication-setting.png" alt=""> Communication Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Account Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/sms-history.png" alt=""> SMS History
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/upgrade-now.png" alt=""> Upgrade Now
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/privacy-policy.png" alt=""> Privacy Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/feedback.png" alt=""> Feedback
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-support.png" alt=""> Help & Support
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/about-us.png" alt=""> About Us
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/share-app.png" alt=""> Share App
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/term-condition.png" alt=""> Term & Condition
+                    </a>
+                    <a href="alert-update.html" class="settings-item">
+                        <img src="img/alert-update.png" alt=""> Alerts & Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            <a href="" style="border: 1px solid grey; padding: 5px; border-radius: 10px; color: #015884;
+        text-decoration: none;">Log Out</a>
+        </div>
+    </div>
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                        style="color: #0D3F6C;">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/home-icon.png" alt="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/message-icon.png" alt="">Message</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">Renew</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/membership-icon.png"
+                            alt="">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">Success
+                        Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">Contact Us</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">Profile</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/setting-icon.png" alt="">Setting</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header-metrics">
+        <div class="metric-item">
+            <div class="count">24</div>
+            <div class="label">Profile Viewed</div>
+        </div>
+        <div class="metric-item">
+            <div class="count">24</div>
+            <div class="label">Declined/Cancelled Interest</div>
+        </div>
+        <div class="metric-item">
+            <div class="count">24</div>
+            <div class="label">Interest Accepted</div>
+        </div>
+        <div class="metric-item">
+            <div class="count">24</div>
+            <div class="label">Interest Received</div>
+        </div>
+        <div class="metric-item">
+            <div class="count">24</div>
+            <div class="label">Interest Sent</div>
+        </div>
+        <div class="metric-item">
+            <div class="count">24</div>
+            <div class="label">Shortlisted</div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header-section text-white d-flex justify-content-between align-items-center px-4 py-2">
+        <div class="logo d-flex align-items-center">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="header-title text-center">
+            <h5 class="mb-0">Latest Technology</h5>
+        </div>
+        <div class="settings d-flex align-items-center">
+            <p class="mb-0 me-2">Easy application installation</p>
+            <i class="fas fa-cog"></i>
+        </div>
+    </div>
+
+    <!-- orange line -->
+    <section class="navbar-container">
+        <div class="orange-bar" id="orange-bar">
+            <button class="btn next-button" id="next-btn"><img src="img/two-way.png" style="height: 20px;
+                background: transparent;" alt=""></button>
+            <button class="btn prev-button d-none" id="prev-btn"><img src="img/two-way.png"
+                    style="height: 20px; background: transparent;" alt=""></button>
+            <div class="menu-items" id="menu-items">
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">All</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+                <span><a href="">OD</a></span>
+                <span><a href="">AP</a></span>
+                <span><a href="">UP</a></span>
+                <span><a href="">HP</a></span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- filter option -->
+    <section class="filter px-4">
+        <!-- Filter Container -->
+        <div id="filterContainer" class="filter-container">
+            <div class="d-flex">
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Personalize Search
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Refine
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Category
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Filter By
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Short By
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Location
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Affluent
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Match
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Near by
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Religious & Community
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Family
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Age
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Profile crated for
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Physical Attributes
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Blood Group
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Reservation
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown3" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Marital Status
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown-fil">
+                    <button class="filter-button dropdown-toggle" type="button" id="dropdown4" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Mother Tongue
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown4">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next/Previous Button -->
+        <button id="nextBtnFilter" class="next-btnf ms-2">&gt;</button>
+    </section>
+
+    <section class="p-3 mx-3">
+        <h2 class="mb-4">Categories</h2>
+        <div class="d-flex align-items-center">
+            <!-- Previous Button -->
+            <button class="btn btn-outline-secondary control-btn" id="prev-btn1" disabled>&lt;</button>
+
+            <!-- Categories Slider -->
+            <div class="d-flex category-slider overflow-hidden">
+                <div class="category" id="category-0">
+                    <img src="img/cat1.png" alt="Recommended" class="rounded-circle">
+                    <p>Recommended</p>
+                </div>
+                <div class="category" id="category-1">
+                    <img src="img/cat2.png" alt="Matches" class="rounded-circle">
+                    <p>Matches</p>
+                </div>
+                <div class="category" id="category-2">
+                    <img src="img/cat3.png" alt="New" class="rounded-circle">
+                    <p>New</p>
+                </div>
+                <div class="category" id="category-3">
+                    <img src="img/cat1.png" alt="Daily" class="rounded-circle">
+                    <p>Daily</p>
+                </div>
+                <div class="category" id="category-4">
+                    <img src="img/cat2.png" alt="Just Joined" class="rounded-circle">
+                    <p>Just Joined</p>
+                </div>
+                <div class="category" id="category-5">
+                    <img src="img/cat3.png" alt="Nearby" class="rounded-circle">
+                    <p>Nearby</p>
+                </div>
+                <div class="category" id="category-6">
+                    <img src="img/cat1.png" alt="Trending" class="rounded-circle">
+                    <p>Trending</p>
+                </div>
+                <div class="category" id="category-7">
+                    <img src="img/cat2.png" alt="Popular" class="rounded-circle">
+                    <p>Popular</p>
+                </div>
+            </div>
+
+            <!-- Next Button -->
+            <button class="btn btn-outline-secondary control-btn" id="next-btn1">&gt;</button>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row p-3">
+            <!-- Left Section -->
+            <div class="col-md-3 left-section">
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="active" id="refine-tab" onclick="showTab('refine')">Refine</button>
+                    <button id="personalise-tab" onclick="showTab('personalise')">Personalise</button>
+                    <button id="shortby-tab" onclick="showTab('shortby')">Short By</button>
+                </div>
+
+                <!-- Refine Tab Content -->
+                <div class="filter-content" id="refine-content">
+                    <!-- Matches Filter -->
+                    <div class="filter-item">
+                        <button
+                            class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button"
+                            data-bs-toggle="collapse" data-bs-target="#matches-content" aria-expanded="false"
+                            aria-controls="matches-content">
+                            Matches
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div id="matches-content" class="collapse mt-2">
+                            <label><input type="radio" name="matches" value="all"> All Matches</label><br>
+                            <label><input type="radio" name="matches" value="recommended"> Recommended Matches</label>
+                        </div>
+                    </div>
+
+                    <!-- Photo Setting Filter -->
+                    <div class="filter-item">
+                        <button
+                            class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button"
+                            data-bs-toggle="collapse" data-bs-target="#photo-setting-content" aria-expanded="false"
+                            aria-controls="photo-setting-content">
+                            Photo Setting
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div id="photo-setting-content" class="collapse mt-2">
+                            <label><input type="radio" name="photo" value="with-photo"> With Photo</label><br>
+                            <label><input type="radio" name="photo" value="without-photo"> Without Photo</label>
+                        </div>
+                    </div>
+
+                    <!-- Recently Joined Filter -->
+                    <div class="filter-item">
+                        <button
+                            class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button"
+                            data-bs-toggle="collapse" data-bs-target="#recently-joined-content" aria-expanded="false"
+                            aria-controls="recently-joined-content">
+                            Recently Joined
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div id="recently-joined-content" class="collapse mt-2">
+                            <label><input type="radio" name="recently" value="today"> Today</label><br>
+                            <label><input type="radio" name="recently" value="week"> This Week</label>
+                        </div>
+                    </div>
+                    <!-- Active Members Filter -->
+                    <div class="filter-item">
+                        <button
+                            class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button"
+                            data-bs-toggle="collapse" data-bs-target="#active-member-content" aria-expanded="false"
+                            aria-controls="active-member-content">
+                            Active Members
+                            <span class="expand-icon">+</span>
+                        </button>
+                        <div id="active-member-content" class="collapse mt-2">
+                            <label><input type="radio" name="recently" value="today"> Today</label><br>
+                            <label><input type="radio" name="recently" value="week"> This Week</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personalise Tab Content -->
+                <div class="filter-content d-none" id="personalise-content">
+                    <div class="filter-item">
+                        <button class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button" data-bs-target="#lives-in-content" data-bs-toggle="collapse">
+                            Lives In <span class="expand-icon">+</span>
+                        </button>
+                        <div id="lives-in-content" class="collapse">
+                            <input type="radio" id="city1" name="lives_in" value="city1">
+                            <label for="city1">City 1</label><br>
+                            <input type="radio" id="city2" name="lives_in" value="city2">
+                            <label for="city2">City 2</label>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <button class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button" data-bs-target="#religious-community-content" data-bs-toggle="collapse">
+                            Religious & Community <span class="expand-icon">+</span>
+                        </button>
+                        <div id="religious-community-content" class="collapse">
+                            <input type="radio" id="religion1" name="religious_community" value="religion1">
+                            <label for="religion1">Religion 1</label><br>
+                            <input type="radio" id="religion2" name="religious_community" value="religion2">
+                            <label for="religion2">Religion 2</label>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <button class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button" data-bs-target="#age-content" data-bs-toggle="collapse">
+                            Age <span class="expand-icon">+</span>
+                        </button>
+                        <div id="age-content" class="collapse">
+                            <input type="radio" id="age1" name="age" value="age1">
+                            <label for="age1">18-25</label><br>
+                            <input type="radio" id="age2" name="age" value="age2">
+                            <label for="age2">26-35</label>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <button class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button" data-bs-target="#profile-created-for-content" data-bs-toggle="collapse">
+                            Profile Created For <span class="expand-icon">+</span>
+                        </button>
+                        <div id="profile-created-for-content" class="collapse">
+                            <input type="radio" id="self" name="profile_created_for" value="self">
+                            <label for="self">Self</label><br>
+                            <input type="radio" id="parent" name="profile_created_for" value="parent">
+                            <label for="parent">Parent</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Short By Tab Content -->
+                <div class="filter-content d-none" id="shortby-content">
+                    <div class="filter-item">
+                        <button class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button" data-bs-target="#recently-added-content" data-bs-toggle="collapse">
+                            Recently Added <span class="expand-icon">+</span>
+                        </button>
+                        <div id="recently-added-content" class="collapse">
+                            <input type="radio" id="recent1" name="recently_added" value="recent1">
+                            <label for="recent1">Option 1</label><br>
+                            <input type="radio" id="recent2" name="recently_added" value="recent2">
+                            <label for="recent2">Option 2</label>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <button class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button" data-bs-target="#popularity-content" data-bs-toggle="collapse">
+                            Popularity <span class="expand-icon">+</span>
+                        </button>
+                        <div id="popularity-content" class="collapse">
+                            <input type="radio" id="popular1" name="popularity" value="popular1">
+                            <label for="popular1">Option 1</label><br>
+                            <input type="radio" id="popular2" name="popularity" value="popular2">
+                            <label for="popular2">Option 2</label>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <button class="btn btn-link d-flex justify-content-between align-items-center w-100 toggle-button" data-bs-target="#location-content" data-bs-toggle="collapse">
+                            Location <span class="expand-icon">+</span>
+                        </button>
+                        <div id="location-content" class="collapse">
+                            <input type="radio" id="location1" name="location" value="location1">
+                            <label for="location1">Option 1</label><br>
+                            <input type="radio" id="location2" name="location" value="location2">
+                            <label for="location2">Option 2</label>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-md-9 right-section">
+                <h2 class="text-center mb-4">Explore Your Interests</h2>
+                <div class="row g-3 mb-3">
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore1.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore2.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore3.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore4.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more profile cards as needed -->
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore1.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore2.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore3.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="profile-card text-start">
+                            <img src="img/explore4.png" alt="Profile Image">
+                            <div class="profile-details">
+                                <h6>Monalisha Barik</h6>
+                                <p>22 yrs, 5'1", Khandayat, Odia</p>
+                                <p>Bhubaneswar, Odisha, MA, Exec. Officer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more profile cards as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Matri STATION Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold">Matri STATION</h5>
+                    <p>
+                        MatriStation is an exclusive platform for marriage proposals, offering crucial match-making
+                        solutions across India. The name "MatriStation" embodies the essence of matrimony, bringing
+                        together individuals from diverse backgrounds to form meaningful connections and lifelong
+                        partnerships within the community.
+                    </p>
+                </div>
+                <!-- Explore Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Advance Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matches</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Testimonial</a></li>
+                    </ul>
+                </div>
+                <!-- Other Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">Other Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Match Making Process</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Matri STATION</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matri STATION Alerts</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Match Guarantee</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold">Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li>+91 2323 232323</li>
+                        <li>+91 0365 555568</li>
+                    </ul>
+                    <h5 class="fw-bold mt-3">Follow us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 2px solid white;"></div>
+        <div class="d-flex justify-content-center mt-2">
+            <h7>All Rights Reserved By @ Design and developed by Matristation.com</h7>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const settingsText = document.querySelector('.settings p');
+        const textArray = [
+            'Latest Technology',
+            'Easy Application Instalation',
+            'Multiple Free Choice',
+            'Quick and Easy Registration',
+            'Widest Range',
+            'Access to advanced message feature',
+            'Preview message for free',
+            'Enjoy Browsing Profile Immediately',
+            'Trusted site backed by Matri Station'
+        ];
+        let currentIndex = 0;
+
+        function rotateText() {
+            // Animate current text upwards with opacity transition
+            settingsText.style.opacity = 0;
+            settingsText.style.transform = 'translateY(-100%)'; // Move current text out of view
+            settingsText.style.transition = 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out';
+
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % textArray.length;
+                settingsText.textContent = textArray[currentIndex];
+
+                // Animate new text in from bottom with opacity transition
+                settingsText.style.opacity = 1;
+                settingsText.style.transform = 'translateY(0)';
+                settingsText.style.transition = 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out';
+            }, 500); // Adjust the delay for animation duration
+        }
+
+        setInterval(rotateText, 3000); // Adjust the interval for rotation speed
+
+        // for left tabs
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleButtons = document.querySelectorAll(".toggle-button");
+
+    toggleButtons.forEach(button => {
+        const expandIcon = button.querySelector(".expand-icon");
+        const targetId = button.getAttribute("data-bs-target");
+        const targetElement = document.querySelector(targetId);
+
+        // Toggle icon state immediately on click for fast feedback
+        button.addEventListener("click", function () {
+            if (expandIcon.textContent === "+") {
+                expandIcon.textContent = "-";
+            } else {
+                expandIcon.textContent = "+";
+            }
+        });
+
+        // Ensure icon reflects the correct state after Bootstrap animations
+        targetElement.addEventListener("shown.bs.collapse", () => {
+            expandIcon.textContent = "-";
+        });
+
+        targetElement.addEventListener("hidden.bs.collapse", () => {
+            expandIcon.textContent = "+";
+        });
+    });
+});
+
+    </script>
+    <!-- <script>const settingsText = document.querySelector('.settings p');
+        const textArray = ['Latest Technology',
+            'Easy Application Instalation',
+            'Multiple Free Choice',
+            'Quick and Easy Registration',
+            'Widest Range',
+            'Access to advanced message feature ',
+            'Preview message for free',
+            'Enjoy Browsing Profile Immediately',
+            'Trusted site backed by Matri Station'];
+        let currentIndex = 0;
+
+        function rotateText() {
+            settingsText.style.transform = 'translateY(-100%)'; // Move the text out of view
+
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % textArray.length;
+                settingsText.textContent = textArray[currentIndex];
+                settingsText.style.transform = 'translateY(0)'; // Bring the new text into view
+            }, 500); // Adjust the delay as needed
+        }
+
+        setInterval(rotateText, 3000); // Adjust the interval to control the rotation speed</script> -->
+</body>
+
+</html>

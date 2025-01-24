@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatriStation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .plan-section {
+            padding: 50px 20px;
+        }
+
+        .plan-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .plan-header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .plan-header p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .plan-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .benefits-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            padding: 20px;
+        }
+
+        .plan-amount {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .plan-amount .amount {
+            color: #e60000;
+            font-weight: bold;
+        }
+
+        .coupon-input {
+            margin-bottom: 15px;
+        }
+
+        .pay-now-btn {
+            background-color: #004085;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .pay-now-btn:hover {
+            background-color: #00306b;
+        }
+
+        .benefits-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits-container ul li {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .benefits-container ul li i {
+            color: green;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Desktop Navbar Section -->
+    <nav class="navbar-container desktop-menu p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                    <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                    <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                            style="color: #0D3F6C;">STATION</span></h5>
+                </a>
+
+                <!-- Navbar Menu -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/home-icon.png" alt="">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/message-icon.png" alt="">
+                            Message
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">
+                            Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">
+                            Renew
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/membership-icon.png" alt="">
+                            Membership
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <!-- Right Section -->
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">
+                            Success Story
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleMegaMenu()"><img src="img/setting-icon.png" alt="">
+                            Setting
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mega Menu -->
+    <div class="mega-menu" id="mega-menu">
+        <div class="d-flex" style="height: 500px;">
+            <!-- Left Section: Browse History -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Browse History</div>
+                <div class="browse-history">
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS001)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS002)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS003)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS004)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                    <div class="mega-menu-item">
+                        Sunita Ratha (MS005)
+                        <button class="remove-btn">&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Settings List -->
+            <div class="mega-menu-section">
+                <div class="mega-menu-header">Settings</div>
+                <div class="settings-list">
+                    <a href="#" class="settings-item">
+                        <img src="img/profile-icon.png" alt=""> My Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/blocked-user.png" alt=""> Blocked User
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/notification.png" alt=""> Notification
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/wallet.png" alt=""> Wallet
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refer-earn.png" alt=""> Refer and Earn
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/refund-policy.png" alt=""> Refund Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/matches.png" alt=""> Matches
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/mail-box.png" alt=""> Mail Box
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/chat.png" alt=""> Chat
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-profile.png" alt=""> Edit Profile
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-center.png" alt=""> 24x7 Help Center
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/edit-partner.png" alt=""> Edit Partner Preference
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/privacy-setting.png" alt=""> Privacy Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/communication-setting.png" alt=""> Communication Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/setting-icon.png" alt=""> Account Setting
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/sms-history.png" alt=""> SMS History
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/upgrade-now.png" alt=""> Upgrade Now
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/privacy-policy.png" alt=""> Privacy Policy
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/feedback.png" alt=""> Feedback
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/help-support.png" alt=""> Help & Support
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/about-us.png" alt=""> About Us
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/share-app.png" alt=""> Share App
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/term-condition.png" alt=""> Term & Condition
+                    </a>
+                    <a href="#" class="settings-item">
+                        <img src="img/alert-update.png" alt=""> Alerts & Updates
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3">
+            <a href="" style="border: 1px solid grey; padding: 5px; border-radius: 10px; color: #015884;
+        text-decoration: none;">Log Out</a>
+        </div>
+    </div>
+    <!-- Mobile Navbar Section -->
+    <nav class="mobile-menu">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Logo -->
+            <a class="d-flex align-items-center" style="text-decoration: none" href="#">
+                <img src="img/matristation-logo.png" alt="Matri Station Logo" class="logo me-2">
+                <h5 class="mb-0" style="color: #EC3B67; white-space: nowrap; word-wrap: normal;">Matri <span
+                        style="color: #0D3F6C;">STATION</span></h5>
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" id="mobileMenuToggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Collapsible Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/home-icon.png" alt="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/message-icon.png" alt="">Message</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/chat-icon.png" alt="">Chat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/renew-icon.png" alt="">Renew</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/membership-icon.png"
+                            alt="">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/successstory-icon.png" alt="">Success
+                        Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/contact-icon.png" alt="">Contact Us</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/profile-icon.png" alt="">Profile</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="img/setting-icon.png" alt="">Setting</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <!-- privacy-setting -->
+    <section class="container mt-4 mb-5">
+        <div class="alerts-section">
+            <div class="p-2">
+                <h4 class="section-title">SELECTED PLAN - Online Sarala</h4>
+                <p class="section-description">
+                    Choose one of the packages listed below
+                </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- Plan Details -->
+                    <div class="col-md-6">
+                        <div class="plan-container">
+                            <div class="plan-amount">
+                                <p>Plan Amount: <span class="amount">INR 2000</span></p>
+                                <p>Total Payable Amount: <span class="amount">INR 2000</span></p>
+                            </div>
+    
+                            <div class="coupon-input d-flex justify-content-between">
+                                <input type="text" class="form-control w-50" placeholder="Coupon Code">
+                                <button class="btn btn-success w-20">Redeem</button>
+                            </div>
+                            <div class="coupon-input d-flex justify-content-center gap-5">
+                                <button class="pay-now-btn w-50">Pay Now</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Benefits -->
+                    <div class="col-md-6">
+                        <div class="benefits-container">
+                            <h5>Benefits</h5>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>Contact Number</li>
+                                <li><i class="bi bi-check-circle-fill"></i>View Profile</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Live Chat & Video Call</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Personal Message</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Contact Nos</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Contact Nos</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Contact Nos</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Contact Nos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Matri STATION Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold">Matri STATION</h5>
+                    <p>
+                        MatriStation is an exclusive platform for marriage proposals, offering crucial match-making
+                        solutions across India. The name "MatriStation" embodies the essence of matrimony, bringing
+                        together individuals from diverse backgrounds to form meaningful connections and lifelong
+                        partnerships within the community.
+                    </p>
+                </div>
+                <!-- Explore Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Advance Search</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matches</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Membership</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Success Stories</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Testimonial</a></li>
+                    </ul>
+                </div>
+                <!-- Other Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">Other Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Match Making Process</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Matri STATION</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Matri STATION Alerts</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Refund Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Match Guarantee</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold">Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li>+91 2323 232323</li>
+                        <li>+91 0365 555568</li>
+                    </ul>
+                    <h5 class="fw-bold mt-3">Follow us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 2px solid white;"></div>
+        <div class="d-flex justify-content-center mt-2">
+            <h7>All Rights Reserved By @ Design and developed by Matristation.com</h7>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
